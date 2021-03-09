@@ -275,27 +275,22 @@ deste ângulo.Lembre - se que uma função
 trigonométrica trabalha em radianos.
 
 
-            double an_radiano, sen, cos, tan, an_graus, pi;
+         double an_radiano, sen, cos, tan, an_graus, pi;
             Console.Write("Qual ângulo você deseja: "); // O C# dá o angulo e faz as medidas em radiano
             an_radiano = int.Parse(Console.ReadLine());
             sen = Math.Sin(an_radiano);
             cos = Math.Cos(an_radiano);
             tan = Math.Tan(an_radiano);
-
-
-
-            Console.WriteLine("Os valores em radiano são :Seno de {0}: {1}  / Cosseno de {0}:{2}  /Tangente de {0}: {3}", an_radiano, sen, cos, tan);
-
+            Console.WriteLine("Os valores em radiano são :Seno de {0}: {1:f2}  / Cosseno de {0}:{2:f2}  /Tangente de {0}: {3:f2}", an_radiano, sen, cos, tan);
             double sen2, cos2, tan2;
             pi = Math.PI;
             an_graus = (an_radiano * pi) / 180; //Convertendo radiano para graus para extrair o seno, cosseno e tangente em graus. Fórmula : Graus = angulo (x) em radiano * PI / 180
             sen2 = Math.Sin(an_graus);
             cos2 = Math.Cos(an_graus);
             tan2 = Math.Tan(an_graus);
-
             Console.WriteLine("");
+            Console.WriteLine("Os valores em grau são :Seno de {0}: {1:f2}  / Cosseno de {0}:{2:f2}  /Tangente de {0}: {3:f2}", an_radiano, sen2, cos2, tan2);
 
-            Console.WriteLine("Os valores em grau são :Seno de {0}: {1}  / Cosseno de {0}:{2}  /Tangente de {0}: {3}", an_radiano, sen2, cos2, tan2);
 
 
             //Ex 17
