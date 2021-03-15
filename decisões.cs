@@ -138,6 +138,28 @@ namespace TPAula02
             //        Console.WriteLine("O maior é {0}", c);
             //    }
             //}
+            
+            OU 
+             
+            //if (a > b)
+//{
+// maior = a;
+//}
+//else
+//{
+// maior = b;
+//}
+
+
+
+//if (c > maior)
+//{
+// maior = c;
+//}
+
+
+
+//Console.WriteLine("o maior número é {0}", maior);
 
             //Ex 7
             //float p1, p2, m;
