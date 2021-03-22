@@ -9,26 +9,34 @@ namespace EX12
             /*1.Entrar com o peso e a altura de uma determinada pessoa.
 Após a digitação, exibir se esta pessoa está ou não com seu
 peso ideal.Veja tabela da relação peso / altura².*/
-            //float peso, altura, R;
+                        //float peso, altura, R;
             //Console.Write("Digite sua altura: ");
             //altura = float.Parse(Console.ReadLine());
             //Console.Write("Digite seu peso: ");
             //peso = float.Parse(Console.ReadLine());
 
             //R = peso / (altura * altura);
+            ////R = (float)(peso / (Math.Pow(altura, 2)));
+            //Console.WriteLine("Seu IMC é de {0}", R);
 
 
             //if (R < 20)
             //{
             //    Console.WriteLine("Abaixo do peso");
             //}
-            //if (20 <= R && R < 25)
+            //else
             //{
-            //    Console.WriteLine("Peso ideal");
-            //}
-            //if (R >= 25)
-            //{
-            //    Console.WriteLine("Acima do peso");
+            //    if (20 <= R && R < 25)
+            //    {
+            //        Console.WriteLine("Peso ideal");
+            //    }
+            //    else
+            //    {
+            //        if (R >= 25)
+            //        {
+            //            Console.WriteLine("Acima do peso");
+            //        }
+            //    }
             //}
 
             /*2. A partir de 3 (três) valores que serão digitados, verificar se
@@ -39,7 +47,7 @@ triângulo isósceles, dois lados iguais e o equilátero, todos os
 lados iguais. Para existir triângulo é necessário que a soma
 de dois lados quaisquer seja maior que o outro, isto, para os
 três lados. */
-            //int v1, v2, v3;
+                        //int v1, v2, v3;
             //Console.Write("Digite o primeiro valor: ");
             //v1 = int.Parse(Console.ReadLine());
             //Console.Write("Digite o segundo valor: ");
@@ -54,15 +62,19 @@ três lados. */
             //    {
             //        Console.WriteLine("Triangulo equilatero");
             //    }
-
-            //    if (v1 != v2 && v2 != v3 && v3 != v1)
+            //    else
             //    {
-            //        Console.WriteLine("Triangulo escaleno");
-            //    }
-
-            //    if (v1 == v2 && v1 != v3 || v3 == v1 && v3 != v2 || v2 == v3 && v2 != v1)
-            //    {
-            //        Console.WriteLine("Triângulo isóceles");
+            //        if (v1 != v2 && v2 != v3 && v3 != v1)
+            //        {
+            //            Console.WriteLine("Triangulo escaleno");
+            //        }
+            //        else
+            //        {
+            //            if (v1 == v2 && v1 != v3 || v3 == v1 && v3 != v2 || v2 == v3 && v2 != v1)
+            //            {
+            //                Console.WriteLine("Triângulo isóceles");
+            //            }
+            //        }
             //    }
             //}
 
@@ -190,37 +202,51 @@ quadrados dos catetos. */
                km/h. Exibir mensagem de acordo com a tabela abaixo.
                Fórmula para o cálculo da velocidade em m/s: V = v0 + a. t.*/
 
-                // float v0, a, t,v;
-                // Console.Write("Digite a aceleração em m/s²: ");
-                // a = float.Parse(Console.ReadLine());
-                // Console.Write("Digite a velocidade inicial em m/s: ");
-                // v0 = float.Parse(Console.ReadLine());
-                // Console.Write("Digite o tempo do percurso em s: ");
-                // t = float.Parse(Console.ReadLine());
+               //float v0, a, t, v;
+            //Console.Write("Digite a aceleração em m/s²: ");
+            //a = float.Parse(Console.ReadLine());
+            //Console.Write("Digite a velocidade inicial em m/s: ");
+            //v0 = float.Parse(Console.ReadLine());
+            //Console.Write("Digite o tempo do percurso em s: ");
+            //t = float.Parse(Console.ReadLine());
 
-                // v = v0 + (a*t);
-                //double vf = v * 3.6;
+            //v = v0 + (a * t);
+            //double vf = v * 3.6;
 
-                // if (vf <= 40)
-                // {
-                //     Console.WriteLine("Veículo muito lento");
-                // }
-                // if (40<vf && vf <= 60)
-                // {
-                //     Console.WriteLine("Velocidade permitida");
-                // }
-                // if (60<vf && vf<= 80)
-                // {
-                //     Console.WriteLine("Velcoidade de cruzeiro");
-                // }
-                // if ( 80<vf && vf <= 120)
-                // {
-                //     Console.WriteLine("Veículo rápido");
-                // }
-                // if ( vf >= 120)
-                // {
-                //     Console.WriteLine("Veículo muito rápido");
-                // }
+            //Console.WriteLine("A velocidade em km/h é igual a {0}", vf);
+
+            //if (vf <= 40)
+            //{
+            //    Console.WriteLine("Veículo muito lento");
+            //}
+            //else
+            //{
+            //    if (40 < vf && vf <= 60)
+            //    {
+            //        Console.WriteLine("Velocidade permitida");
+            //    }
+            //    else
+            //    {
+            //        if (60 < vf && vf <= 80)
+            //        {
+            //            Console.WriteLine("Velcoidade de cruzeiro");
+            //        }
+            //        else
+            //        {
+            //            if (80 < vf && vf <= 120)
+            //            {
+            //                Console.WriteLine("Veículo rápido");
+            //            }
+            //            else
+            //            {
+            //                if (vf >= 120)
+            //                {
+            //                    Console.WriteLine("Veículo muito rápido");
+            //                }
+            //            }
+            //        }
+            //    }
+            //}
 
         }
                 }
