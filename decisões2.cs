@@ -90,50 +90,67 @@ digitados formam ou não um triângulo retângulo. Lembre-se
 que o quadrado da hipotenusa é igual à soma dos
 quadrados dos catetos. */
 
-         //   int a, b, c;
-           
-         //   Console.Write("Digite o valor de A: ");
-         //   a = int.Parse(Console.ReadLine());
-         //   Console.Write("Digite o valor de B: ");
-         //   b = int.Parse(Console.ReadLine());
-         //   Console.Write("Digite o valor de C: ");
-         //   c = int.Parse(Console.ReadLine());
+                    //int a, b, c;
 
-         //if (a + b > c && b + c > a && c + a > b) { 
-         //   if (a > b && a > c)
-         //       {
-         //           int hipotenusa = (int)Math.Pow(a, 2);
-         //           int cat1 = (int)Math.Pow(b, 2);
-         //           int cat2 = (int)Math.Pow(c, 2);
-         //           if (hipotenusa == cat1 + cat2)
-         //           {
-         //               Console.WriteLine("Forma triângulo retângulo");
-         //           }
-         //       }
-         //       if (b > a && b > c)
-         //       {
-         //           int hipotenusa = (int)Math.Pow(b, 2);
-         //           int cat1 = (int)Math.Pow(a, 2);
-         //           int cat2 = (int)Math.Pow(c, 2);
-         //           if (hipotenusa == cat1 + cat2)
-         //           {
-         //               Console.WriteLine("Forma triângulo retângulo");
-         //           }
-         //       }
-         //       if (c > a && c > b)
-         //       {
-         //           int hipotenusa = (int)Math.Pow(c, 2);
-         //           int cat1 = (int)Math.Pow(a, 2);
-         //           int cat2 = (int)Math.Pow(b, 2);
-         //           {
-         //               Console.WriteLine("Forma triângulo retângulo");
-         //           }
-         //       }
-         //   }
-         //   else
-         //   {
-         //       Console.WriteLine("Não forma um triângulo retângulo");
-         //   }
+            //Console.Write("Digite o valor de A: ");
+            //a = int.Parse(Console.ReadLine());
+            //Console.Write("Digite o valor de B: ");
+            //b = int.Parse(Console.ReadLine());
+            //Console.Write("Digite o valor de C: ");
+            //c = int.Parse(Console.ReadLine());
+
+            //if (a + b > c && b + c > a && c + a > b)
+            //{
+            
+            //        if (a > b && a > c)
+            //        {
+            //            int hipotenusa = (int)Math.Pow(a, 2);
+            //            int cat1 = (int)Math.Pow(b, 2);
+            //            int cat2 = (int)Math.Pow(c, 2);
+            //            if (hipotenusa == cat1 + cat2)
+            //            {
+            //                Console.WriteLine("Forma triângulo retângulo");
+            //            }
+            //        }
+            //        else
+            //        {
+            //            if (b > a && b > c)
+            //            {
+            //                int hipotenusa = (int)Math.Pow(b, 2);
+            //                int cat1 = (int)Math.Pow(a, 2);
+            //                int cat2 = (int)Math.Pow(c, 2);
+            //                if (hipotenusa == cat1 + cat2)
+            //                {
+            //                    Console.WriteLine("Forma triângulo retângulo");
+            //                }
+            //            }
+            //            else
+            //            {
+            //                if (c > a && c > b)
+            //                {
+            //                    int hipotenusa = (int)Math.Pow(c, 2);
+            //                    int cat1 = (int)Math.Pow(a, 2);
+            //                    int cat2 = (int)Math.Pow(b, 2);
+            //                    {
+            //                        Console.WriteLine("Forma triângulo retângulo");
+            //                    }
+            //                }
+            //                else
+            //                {
+            //                    Console.WriteLine("Não forma um triângulo retãngulo");
+            //                }
+            //            }
+            //        }
+            //    }
+            
+
+
+
+            //else
+            //{
+            //    Console.WriteLine("Não forma um triângulo");
+            //}
+
 
 
 
