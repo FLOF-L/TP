@@ -104,40 +104,37 @@ namespace EX12
 //decrescente, ou seja, a tabuada de X no intervalo de
 //B para A.
 
-//            int x, a, b;
+//                       //int x, a, b;
 
-//                Console.Write("Digite um valor positivo: ");
-//                x = int.Parse(Console.ReadLine());
+            //Console.Write("Digite um valor positivo: ");
+            //x = int.Parse(Console.ReadLine());
 
-//                while (x < 0)
-//                {
-//                    Console.Write("Digite um valor positivo: ");
-//                    x = int.Parse(Console.ReadLine());
-//                }
+            //while (x <= 0)
+            //{
+            //    Console.Write("Digite um valor positivo: ");
+            //    x = int.Parse(Console.ReadLine());
+            //}
 
-//                Console.WriteLine("Em qual intervalo a tabuada deve ser calculada?");
-//                Console.Write("Valor de início: ");
-//                a = int.Parse(Console.ReadLine());
-//                Console.Write("Valor final: ");
-//                b = int.Parse(Console.ReadLine());
-
-
-//                while (a > b)
-//                {
-//                    Console.Write("Valor final: ");
-//                    b = int.Parse(Console.ReadLine());
-//                }
+            //Console.WriteLine("Em qual intervalo a tabuada deve ser calculada?");
+            //Console.Write("Valor de início: ");
+            //a = int.Parse(Console.ReadLine());
+            //Console.Write("Valor final: ");
+            //b = int.Parse(Console.ReadLine());
 
 
-//                while (b > a)
-//                {
-
-//                    Console.WriteLine("{0} x {1} = {2}", x, b, x * b);
-//                }
-
-
+            //while (b <= a)
+            //{
+            //    Console.Write("Valor final: ");
+            //    b = int.Parse(Console.ReadLine());
+            //}
 
 
+            //while (b >= a)
+            //{
+              
+            //    Console.WriteLine("{0} x {1} = {2}", x, b, x * b);
+            //    b--;
+            //}
 
 //                Ex 7 Exibir a tabuada dos valores de um a vinte, no intervalo
 //de um a dez. Entre as tabuadas, solicitar que o usuário
