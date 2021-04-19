@@ -45,7 +45,7 @@ namespace EX12
 //aceitar somente “F” ou “M” como respostas válidas.
 //            char sexo;
 //                Console.Write("Sexo: ");
-//                sexo = char.Parse(Console.ReadLine());
+//                sexo = char.Parse(Console.ReadLine().ToUpper));
 
 //                while (sexo != 'M' && sexo != 'F')
 //                {
