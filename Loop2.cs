@@ -44,7 +44,7 @@ solicitar o valor novamente.*/
 
             //}
 
-            //Console.WriteLine(soma);
+         //Console.WriteLine("A soma é {0,4:F2}",soma);
 
 
 
