@@ -180,7 +180,7 @@ mulheres.*/
             //    else
             //    {
 
-            //        soma_peso_f = soma_peso_m + peso;
+            //        soma_peso_f = soma_peso_f + peso;
             //        qtd_mulheres++;
 
             //    }
