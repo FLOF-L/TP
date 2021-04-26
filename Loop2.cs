@@ -110,7 +110,7 @@ subtrações. Faça todas as proteções necessárias.*/
             //resto = 0;
 
 
-            //while (b > a)
+            //while (b >= a)
             //{
             //    Console.Write("Digite os valores novamente.O valor de A deve ser maior que o de B");
             //    Console.Write("Digite o valor de A: ");
