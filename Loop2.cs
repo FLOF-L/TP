@@ -8,6 +8,12 @@ namespace EX12
             //            Loop 
 
             //Ex 11
+            /*Calcular e exibir a soma dos “N” primeiros valores da
+sequência abaixo.O valor “N” será digitado, deverá ser
+positivo, mas menor que cinquenta.Caso o valor não
+satisfaça a restrição, enviar mensagem de erro e
+solicitar o valor novamente.*/
+            //Sequência : 1/2, 2/3, 3/4
 
             //double n, x;
             //int contador;
@@ -30,7 +36,7 @@ namespace EX12
             //while (contador < n)
             //{
 
-            //    conta = x / (x + 1);
+            //    conta = x / (+1);
             //    soma = soma + conta;
             //    conta = 0;
             //    x++;
@@ -42,7 +48,16 @@ namespace EX12
 
 
 
+
+
+
+
+
             //Ex12
+            /* Descreva um programa que receba via teclado 10 
+(dez) valores e que, ao final, exiba o maior e menor 
+deles.*/
+
             //int a, contador;
             //int maior, menor;
 
@@ -78,7 +93,14 @@ namespace EX12
             //Console.WriteLine("Maior:{0} e menor:{1}", maior, menor);
 
 
+
+
+
+
             //Ex13
+            /*Descreva um programa que calcule o resto da divisão 
+de dois números A e B (A>B) utilizando somente 
+subtrações. Faça todas as proteções necessárias.*/
             //int a, b, resto;
 
             //Console.Write("Digite o valor de A: ");
@@ -117,14 +139,19 @@ namespace EX12
 
 
             //Ex14
+            /*Descreva um programa que solicita que sejam 
+digitados o peso e o sexo de um grupo de 100 (cem) 
+pessoas. No final, o programa deverá mostrar na tela a 
+média do peso dos homens e a média do peso das 
+mulheres.*/
             //float peso, soma_peso_m, soma_peso_f;
-            //int qtd_homens = 0; 
+            //int qtd_homens = 0;
             //int qtd_mulheres = 0;
             //string sexo;
             //int contador = 0;
             //soma_peso_m = 0;
             //soma_peso_f = 0;
-            //float media_homens = 0; 
+            //float media_homens = 0;
             //float media_mulheres = 0;
 
             //while (contador < 4)
@@ -171,6 +198,19 @@ namespace EX12
 
 
             ////Ex15
+            /*Entrar via teclado com “N” valores quaisquer. O valor 
+“N” (que representa a quantidade de números) será 
+digitado, deverá ser positivo, mas menor que vinte. 
+Caso a quantidade não satisfaça a restrição, enviar 
+mensagem de erro e solicitar o valor novamente. Após 
+a digitação dos “N” valores, exibir:*/
+            /* a) O maior valor;
+               b) O menor valor;
+               c) A soma dos valores;
+               d) A média aritmética dos valores;
+               e) A porcentagem de valores que são positivos;
+               f) A porcentagem de valores negativos.  */
+
 
             //int n, valor, soma;
             //int contador = 0;
@@ -239,23 +279,54 @@ namespace EX12
 
             ////Calculando a porcentagem de positivos e negativos 
 
-            //porcentagem_n = n_negativos / (float)n *100;
+            //porcentagem_n = n_negativos / (float)n * 100;
             //porcentagem_p = n_positivos / (float)n * 100;
 
             ////Calculando a média
-            //media = (float) soma / (float)n;
+            //media = (float)soma / (float)n;
 
             //Console.WriteLine("1 - O maior valor é: {0}", maior);
             //Console.WriteLine("2 - O menor valor é: {0}", menor);
             //Console.WriteLine("3 - A soma de todos os números é {0}", soma);
-            //Console.WriteLine("4 - A média aritmética dos valores é {0}", media);;
+            //Console.WriteLine("4 - A média aritmética dos valores é {0}", media); ;
             //Console.WriteLine("5 - A porcentagem de valores que são positivos é {0}", porcentagem_p);
             //Console.WriteLine("6 - A porcentagem de valores que são negativos é {0}", porcentagem_n);
+
+
+
+
+
+
+
+
         }
+
     }
-}
+            }
+        
+    
+
+   
     
 
 
 
     
+
+
+    
+            
+            
+
+
+         
+        
+ 
+
+
+
+
+
+
+
+
