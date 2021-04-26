@@ -36,7 +36,7 @@ solicitar o valor novamente.*/
             //while (contador < n)
             //{
 
-            //    conta = x / (+1);
+            //    conta = x / (x+1);
             //    soma = soma + conta;
             //    conta = 0;
             //    x++;
