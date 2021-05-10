@@ -320,5 +320,40 @@
 
             //    } while (potencia > 0);
 
+
+
+OU 
+
+
+
+
+        //    int n, b, potencia, contador; float resultado; 
+        //    do 
+        //    { 
+        //    Console.Write("Digite um número: "); 
+        //        b = int.Parse(Console.ReadLine()); 
+        //    } while (b <= 0); 
+
+        //    Console.Write("Digite a potência: "); 
+
+        //    n = int.Parse(Console.ReadLine()); 
+
+        //    if (n == 0) 
+        //    {
+        //        resultado = 1;
+        //    }
+        //    else
+        //    {
+        //        if (n < 0) { potencia = n * -1; } else { potencia = n; }
+        //        resultado = 1; contador = potencia; do { resultado *= b; contador--; } while (contador > 0);
+
+        //    }
+
+        //    if (n < 0) {
+        //        resultado = 1 / resultado; 
+        //    }
+        
+        //Console.Write("{0} elevado a {1} é {2}", b, n, resultado);
+
             //    Console.Write(calculo_potencia);
             //}
