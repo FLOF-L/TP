@@ -1,5 +1,4 @@
-
-            /*Ex1  Calcular e exibir a soma dos “N” primeiros valores da
+ /*Ex1  Calcular e exibir a soma dos “N” primeiros valores da
             sequência abaixo. O valor “N” será digitado, deverá ser
             positivo, mas menor ou igual a 20(vinte).Caso o valor
 não satisfaça a restrição, enviar mensagem de erro e
@@ -48,6 +47,37 @@ erro e solicitar o valor novamente.
             2/1   5/8    10/27    17/64              */
 
 
+            //numerador = quadrado do termo + 1;
+            //denominador = termo ao cubo;
+
+
+            //double conta;
+            //int n;
+            //Console.Write("Quantos valores da sequência devem ser somados: ");
+            //n = int.Parse(Console.ReadLine());
+            //double soma = 0;
+
+
+
+            //for(int i = 1; i <= n; i++)
+            //{
+            //    conta = (Math.Pow(i, 2) + 1) / (Math.Pow(i, 3));
+            //    soma = soma + conta;
+            //    conta = 0;
+
+            //}
+
+
+            //Console.WriteLine("A soma dos {0} primeiros números é {1}", n, soma);
+
+
+
+
+
+            //ou
+
+
+
             //int n, i;
 
             //Console.Write("Quantas valores da sequência devem ser somados: ");
@@ -69,7 +99,7 @@ erro e solicitar o valor novamente.
 
             //for (i = 1; i <= n; i++)
             //{
-            //  while(primo == 0)
+            //    while (primo == 0)
             //    {
             //        while (x > contador)
             //        {
@@ -82,7 +112,7 @@ erro e solicitar o valor novamente.
             //            contador++;
             //        }
 
-            //        if(teste == 0)
+            //        if (teste == 0)
             //        {
             //            soma_primos = soma_primos + x;
             //            conta = soma_primos / Math.Pow(i, 3);
@@ -220,10 +250,7 @@ erro e solicitar o valor novamente.
 
 
 
-
-
-
-            //for (int i = 1; i <= 100000; i++)
+            //for (int i = 1; i <= (int)troco; i++)
             //{
 
             //    while (pagamento < valor_compra)
@@ -240,10 +267,9 @@ erro e solicitar o valor novamente.
 
             //        troco = pagamento - valor_compra;
 
-            //        Console.WriteLine("TROCO : R$ {0}", troco);
-
             //    }
 
+            //    Console.WriteLine("TROCO : R$ {0,4:F2}", troco);
 
             //    while (troco >= 1)
             //    {
@@ -282,11 +308,7 @@ erro e solicitar o valor novamente.
             //        troco = troco - 0.01;
             //    }
 
-            //    if (troco == 0)
-            //    {
-            //        i = 100000;
 
-            //    }
             //}
 
 
@@ -334,3 +356,5 @@ Calcular o montante no final do prazo*/
 
 
             //Console.WriteLine("Após os {0} meses o rendimento foi de {1 :f2}", meses - 1, valor);
+
+
