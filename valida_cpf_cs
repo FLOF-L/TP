@@ -19,3 +19,122 @@ Validar CPF
         obtido anteriormente por uma contagem regressiva iniciando de 11
         e terminando em 2
     2 - Mesma lógica do passo 2 do primeiro dígito em diante.
+
+
+
+static void InsereCPF(ref int[] cpf)
+        {
+           
+            for (int i = 0; i < 11; i++)
+            {
+                cpf[i] = int.Parse(Console.ReadLine());
+            }
+
+        }
+
+        static int PrimeiroNum(ref int[] cpf)
+        {
+            int primeiro_num = 0;
+            int contagem = 10;
+            int aux = 0;
+            int soma = 0;
+            for (int i = 0; i < 9; i++)
+            {
+                aux = cpf[i] * contagem;
+                soma = soma + aux;
+                contagem--;
+            }
+
+            int resto = 0;
+            resto = soma % 11;
+            primeiro_num = 11 - resto;
+            //Console.WriteLine("O primeiro digito é: {0}", primeiro_num);
+
+            return (primeiro_num);
+        }
+
+        static int SegundoNum(ref int[] cpf)
+        {
+            int segundo_num = 0;
+            int contagem = 11;
+            int aux = 0;
+            int soma = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                if(i < 9)
+                {
+                    aux = cpf[i] * contagem;
+                    soma = soma + aux;
+                    contagem--;
+                }
+               
+                if(i == 9)
+                {
+                    aux = PrimeiroNum(ref cpf) * contagem;
+                    soma = soma + aux;
+                }
+            }
+            int resto = 0;
+            resto = soma % 11;
+            segundo_num = 11 - resto;
+            //Console.WriteLine("O segundo digito é: {0}", segundo_num);
+            return (segundo_num);
+
+        }
+
+        static string ValidaCPF(ref int[] cpf)
+        {
+            int[] verifica_cpf = new int[11];
+            int validando = 0;
+            string resposta = "";
+            for (int i = 0; i < 11; i++)
+            {
+                if(i < 9)
+                {
+                    verifica_cpf[i] = cpf[i];
+                }
+                if(i == 9)
+                {
+                    verifica_cpf[i] = PrimeiroNum(ref cpf);
+                }
+                if (i ==10)
+                {
+                    verifica_cpf[i] = SegundoNum(ref cpf);
+                }
+            }
+
+            for (int i = 0; i < 11; i++)
+            {
+                if(verifica_cpf[i] == cpf[i])
+                {
+                    validando++;
+                }
+                else
+                {
+                    validando = 0;
+                }
+            }
+            if(validando == 11)
+            {
+                 resposta = "O CPF inserido é VÁLIDO.";
+                Console.WriteLine(resposta);
+            }
+           else
+            {
+                resposta = "O CPF inserido é INVALIDO.";
+                Console.WriteLine(resposta);
+            }
+            return (resposta);
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite um CPF para validarmos: ");
+            int[] cpf = new int[11];
+           InsereCPF(ref cpf);
+           PrimeiroNum(ref cpf);
+            SegundoNum(ref cpf);
+            ValidaCPF(ref cpf);
+
+
+        }
