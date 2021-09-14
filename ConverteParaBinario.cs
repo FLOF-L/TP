@@ -20,7 +20,6 @@
             Console.Write("Digite o número decimal que será convertido em binário: ");
             int num = int.Parse(Console.ReadLine());
             Dec(num);
-
-        
-
         }
+
+https://www.youtube.com/watch?v=anMFmNeoyFw
