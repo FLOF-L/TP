@@ -1,4 +1,4 @@
-  static void Main(string[] args)
+ static void Main(string[] args)
         {
             int option = int.Parse(Console.ReadLine());
 
@@ -13,6 +13,12 @@
                 case 3:
                     Console.WriteLine("Opção 3");
                     break;
+                default:
+                    Console.WriteLine("Não encontrado");
+                    break;
+
+
+
             }
 
         }
