@@ -1,0 +1,207 @@
+Assistir : Canal 076 - Trabalho pratico 1 - Escrever número por extenso.
+https://www.youtube.com/watch?v=vhOKK9G5TN0
+https://www.youtube.com/watch?v=CHzxHQ7fCqI
+
+Ainda esta incompleto!
+
+class Program
+    {
+ class EscreveNum
+        {
+            public int centena { get; set; }
+            public int dezena { get; set; }
+            public int unidade { get; set; }
+
+            public void NumeroPorExtenso(int c, int d, int u)
+            {
+                //Centenas
+                if (c == 9)
+                    Console.Write("Novecentos ");
+
+                if (c == 8)
+                    Console.Write("Oitocentos ");
+
+                if (c == 7)
+                    Console.Write("Setecentos ");
+
+                if (c == 6)
+                    Console.Write("Seiscentos ");
+
+                if (c == 5)
+                    Console.Write("Quinhentos ");
+
+                if (c == 4)
+                    Console.Write("Quatrocentos ");
+
+                if (c == 3)
+                    Console.Write("Trezentos ");
+
+                if (c == 2)
+                    Console.Write("Duzentos ");
+
+                if (c == 1)
+                {
+                    if(d == 0 && u == 0)
+                    {
+                        Console.Write("Cem ");
+                    }
+                    else
+                    {
+                        Console.Write("Cento ");
+                    }
+                }
+
+                //Dezenas
+                if(d == 9)
+                    Console.Write("Noventa");
+
+                if (d == 8)
+                    Console.Write("Oitenta ");
+
+                if (d == 7)
+                    Console.Write("Setenta ");
+
+                if (d == 6)
+                    Console.Write("Sessenta ");
+
+                if (d == 5)
+                    Console.Write("Cinquenta ");
+
+                if (d == 4)
+                    Console.Write("Quarenta ");
+
+                if (d == 3)
+                    Console.Write("Trinta ");
+
+                if (d == 2)
+                    Console.Write("Vinte ");
+
+                if (d == 1)
+                {
+                    if( u == 0)
+                    {
+                        Console.Write("Dez ");
+                    }
+
+                    if (u == 1)
+                    {
+                        Console.Write("Onze ");
+                    }
+
+                    if (u == 2)
+                    {
+                        Console.Write("Doze ");
+                    }
+
+
+                    if (u == 3)
+                    {
+                        Console.Write("Treze ");
+                    }
+
+                    if (u == 4)
+                    {
+                        Console.Write("Quatorze ");
+                    }
+
+                    if (u == 5)
+                    {
+                        Console.Write("Quinze ");
+                    }
+
+                    if (u == 6)
+                    {
+                        Console.Write("Dezesseis ");
+                    }
+
+                    if (u == 7)
+                    {
+                        Console.Write("Dezessete ");
+                    }
+
+                    if (u == 8)
+                    {
+                        Console.Write("Dezoito ");
+                    }
+
+                    if (u == 9)
+                    {
+                        Console.Write("Dezenove ");
+                    }
+
+                }
+
+                //Unidade
+               
+            if(d != 1)
+                {
+                    if (u == 1)
+                    {
+                        Console.Write("Um ");
+                    }
+
+                    if (u == 2)
+                    {
+                        Console.Write("Dois ");
+                    }
+
+
+                    if (u == 3)
+                    {
+                        Console.Write("Três ");
+                    }
+
+                    if (u == 4)
+                    {
+                        Console.Write("Quatro ");
+                    }
+
+                    if (u == 5)
+                    {
+                        Console.Write("Cinco ");
+                    }
+
+                    if (u == 6)
+                    {
+                        Console.Write("Seis ");
+                    }
+
+                    if (u == 7)
+                    {
+                        Console.Write("Sete ");
+                    }
+
+                    if (u == 8)
+                    {
+                        Console.Write("Oito ");
+                    }
+
+                    if (u == 9)
+                    {
+                        Console.Write("Nove ");
+                    }
+
+                }
+
+
+
+            }
+
+        }
+        static void Main(string[] args)
+        {
+            EscreveNum numero = new EscreveNum();
+
+            Console.Write("Digite quantas centenas tem o número: ");
+            numero.centena = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite quantas dezenas tem o número: ");
+            numero.dezena = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite quantas unidades tem o número: ");
+            numero.unidade = int.Parse(Console.ReadLine());
+
+            numero.NumeroPorExtenso(numero.centena, numero.dezena, numero.unidade);
+        }
+        
+    }
