@@ -1,0 +1,553 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace POO_TP02_01
+{
+    class Program
+    {
+
+        /*1- Faça um programa que leia os valores de uma 
+data: o dia, o mês e o ano, com três variáveis 
+inteiras. Faça a consistência da data. Considere 
+meses com 30 dias (4, 6, 9, 11, com 31 dias (1, 3, 5, 7, 
+8, 10, 12) e com 28 ou 29 dias (2).*/
+
+        //class Data
+        //{
+        //    public int dia { get; set; }
+        //    public int mes { get; set; }
+        //    public int ano { get; set; }
+
+        //    public void ValidaIdade(int dia, int mes, int ano)
+        //    {
+        //        while( ano > 2021)
+        //        {
+        //            Console.Write("Digite um ano válido: ");
+        //            ano = int.Parse(Console.ReadLine());
+        //        }
+        //        bool valida_data = false;
+
+        //        while(mes > 12)
+        //        {
+        //            Console.Write("Digite um mês válido: ");
+        //            mes = int.Parse(Console.ReadLine());
+        //        }
+        //        while (valida_data == false)
+        //        {
+        //            if((mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) && dia > 31)
+        //            {
+        //                Console.Write("Digite um dia válido: ");
+        //                dia = int.Parse(Console.ReadLine());
+        //            }
+        //            if ((mes == 4 || mes == 6 || mes == 9 || mes == 11) && dia > 30)
+        //            {
+        //                Console.Write("Digite um dia válido: ");
+        //                dia = int.Parse(Console.ReadLine());
+        //            }
+        //            if( dia == 29 && mes == 2)
+        //            {
+        //                Console.WriteLine("Digite SIM ou NÃO");
+        //                Console.Write("O ano é bissexto (366 dias?): ");
+        //                string resposta = Console.ReadLine();
+        //                if( resposta != "SIM")
+        //                {
+        //                    while (dia > 29)
+        //                    {
+        //                        Console.Write("Digite um dia válido: ");
+        //                        dia = int.Parse(Console.ReadLine());
+        //                    }
+
+        //                }
+        //            }
+        //            else
+        //            {
+        //                Console.WriteLine("Data inserida com sucesso!");
+        //                valida_data = true;
+        //            }
+        //        }
+        //    }
+        //}
+
+
+        //static void Main(string[] args)
+        //{
+        //    Data data = new Data();
+
+        //    Console.Write("Dia: ");
+        //    data.dia = int.Parse(Console.ReadLine());
+
+        //    Console.Write("Mês: ");
+        //    data.mes = int.Parse(Console.ReadLine());
+
+        //    Console.Write("Ano: ");
+        //    data.ano = int.Parse(Console.ReadLine());
+
+        //    data.ValidaIdade(data.dia, data.mes, data.ano);
+
+        //}
+
+
+
+
+
+
+
+        /*
+          2. Escreva um programa que leia o valor de um 
+capital investido e a taxa de juros mensais. Supondo 
+que essa taxa seja constante ao longo de um ano, 
+apresente o valor do investimento ao final de cada 
+mês durante um ano.*/
+
+
+        //class Investimento
+        //{
+        //    public float capital_investido;
+        //    public float taxa_juro_mensal;
+
+        //    public float Define_Capital
+        //    {
+        //        set
+        //        {
+        //            this.capital_investido = value;
+        //        }
+        //    }
+
+        //    public float Define_Taxa
+        //    {
+        //        set
+        //        {
+        //            this.taxa_juro_mensal = value;
+        //        }
+        //    }
+        //    public float Retorna_Define_Capital
+        //    {
+        //        get
+        //        {
+        //            return this.capital_investido;
+        //        }
+        //    }
+
+        //    public float Retorna_Define_Taxa
+        //    {
+        //        get
+        //        {
+        //            return this.taxa_juro_mensal;
+        //        }
+        //    }
+
+        //    public void Retorno_Mensal(float investimento, float taxa)
+        //    {
+        //        float aux = 0;
+        //        float soma = 0;
+        //        for (int i = 1; i <= 12; i++)
+        //        {
+        //            aux = investimento * taxa;
+        //            soma = soma + aux;
+        //            Console.WriteLine("Investimento final do mes {0} = {1}", i, soma);
+        //        }
+
+        //    }
+        //    static void Main(string[] args)
+        //    {
+        //        Investimento valor = new Investimento();
+
+        //        Console.Write("DIGITE O CAPITAL INVESTIDO: ");
+        //        valor.Define_Capital = float.Parse(Console.ReadLine());
+        //        Console.Write("Qual a taxa de juros mensal? ");
+        //        valor.Define_Taxa = float.Parse(Console.ReadLine());
+
+        //        valor.Retorno_Mensal(valor.Retorna_Define_Capital, valor.Retorna_Define_Taxa);
+
+        //    }
+        //}
+
+
+
+
+
+
+        /*3. Determine as raízes de uma equação de 2º grau: 
+ax2 + bx + c = 0 (recordar que o discriminante Δ = 
+b2 – 4ac, e que a raiz r = (–b ± √Δ)/2a).*/
+
+        //class Calcula_SegundoGrau
+        //{
+
+        //    public float a { get; set; }
+        //    public float b { get; set; }
+        //    public float c { get; set; }
+
+        //    public void Raízes(float a, float b, float c)
+        //    {
+        //        float delta, x1, x2;
+
+        //        delta = (float)Math.Pow(b, 2) - (4 * a * c);
+        //        if (a == 0)
+        //        {
+        //            Console.WriteLine("Não forma equação do 2º grau");
+        //        }
+        //        else
+        //        {
+        //            if (delta < 0)
+        //            {
+        //                Console.WriteLine("Não existem raízes reais");
+        //            }
+        //            else
+        //            {
+        //                x1 = (float)(-b + Math.Sqrt(delta)) / (2 * a);
+        //                x2 = (float)(-b - Math.Sqrt(delta)) / (2 * a);
+        //                Console.WriteLine("x1 = {0:f}", x1);
+        //                Console.WriteLine("x2 = {0:f}", x2);
+        //            }
+
+        //        }
+        //    }
+
+        //}
+
+
+        //static void Main(string[] args)
+        //{
+        //    Calcula_SegundoGrau operacao = new Calcula_SegundoGrau();
+        //    Console.Write(" A = ");
+        //    operacao.a = float.Parse(Console.ReadLine());
+
+        //    Console.Write(" B = ");
+        //    operacao.b = float.Parse(Console.ReadLine());
+
+        //    Console.Write(" C = ");
+        //    operacao.c = float.Parse(Console.ReadLine());
+
+        //    operacao.Raízes(operacao.a, operacao.b, operacao.c);
+
+        //}
+
+
+
+
+
+
+        /*4. Para cada produto informado (nome, preço e 
+quantidade), escreva o nome do produto 
+comprado e o valor total a ser pago, considerando 
+que são oferecidos descontos pelo número de 
+unidades compradas, segundo a tabela abaixo: 
+a) Até 10 unidades: valor total 
+b) de 11 a 20 unidades: 10% de desconto 
+c) de 21 a 50 unidades: 20% de desconto 
+d) acima de 50 unidades: 25% de desconto*/
+        //class Produto
+        //{
+        //    //através de método construtor:
+        //    //public Produto()
+        //    //{
+        //    //    nome = Console.ReadLine();
+        //    //    quantidade = int.Parse(Console.ReadLine());
+        //    //    preco = float.Parse(Console.ReadLine());
+
+        //    //}
+
+        //    public string nome { get; set; }
+        //    public float preco { get; set; }
+        //    public int quantidade { get; set; }
+
+        //    public void Calcula_Desconto(string nome,  float preco,  int quantidade)
+        //    {
+        //        Console.WriteLine("Nome do produto:{0} ", nome);
+        //        float total = 0;
+        //        float desconto = 0;
+        //        float final = 0;
+        //        if(quantidade <= 10)
+        //        {
+        //            final = preco * quantidade;
+        //            Console.WriteLine("Preço : R${0}", final);
+        //        }
+        //        if(quantidade > 10 && quantidade <= 20)
+        //        {
+        //            total = preco * quantidade;
+        //            desconto = total * (float)0.10;
+        //            final = total - desconto;
+
+        //            Console.WriteLine("Preço : R${0}", final);
+        //        }
+        //        if(quantidade > 20 && quantidade <= 50)
+        //        {
+        //            total = preco * quantidade;
+        //            desconto = total * (float)0.20;
+        //            final = total - desconto;
+
+        //            Console.WriteLine("Preço : R${0}", final);
+        //        }
+
+        //        if(quantidade > 50)
+        //        {
+        //            total = preco * quantidade;
+        //            desconto = total * (float)0.25;
+        //            final = total - desconto;
+
+        //            Console.WriteLine("Preço : R${0}", final); ;
+        //        }
+        //        Console.ReadKey();
+        //    }
+        //}
+        //static void Main(string[] args)
+        //{
+        //    Produto product = new Produto();
+
+        //    Console.Write("Digite o nome do produto: ");
+        //    product.nome = Console.ReadLine();
+        //    Console.Write("Digite o preço unitário do produto: ");
+        //    product.preco = float.Parse(Console.ReadLine());
+        //    Console.Write("Quantas unidades produto serão compradas? ");
+        //    product.quantidade = int.Parse(Console.ReadLine());
+        //    Console.Clear();
+
+        //    product.Calcula_Desconto(product.nome, product.preco, product.quantidade);
+
+        //}
+
+
+
+
+
+
+        /*5. Desenvolva um método que receba um valor inteiro
+e retorne o valor por extenso deste.*/
+
+        /*
+         *Centena,dezena e unidade
+         Imprimir número entre 1 e 999
+        */
+        //class EscreveNum
+        //{
+        //    public int centena { get; set; }
+        //    public int dezena { get; set; }
+        //    public int unidade { get; set; }
+
+        //    public void NumeroPorExtenso(int c, int d, int u)
+        //    {
+        //        //Centenas
+        //        if (c == 9)
+        //            Console.Write("Novecentos ");
+
+        //        if (c == 8)
+        //            Console.Write("Oitocentos ");
+
+        //        if (c == 7)
+        //            Console.Write("Setecentos ");
+
+        //        if (c == 6)
+        //            Console.Write("Seiscentos ");
+
+        //        if (c == 5)
+        //            Console.Write("Quinhentos ");
+
+        //        if (c == 4)
+        //            Console.Write("Quatrocentos ");
+
+        //        if (c == 3)
+        //            Console.Write("Trezentos ");
+
+        //        if (c == 2)
+        //            Console.Write("Duzentos ");
+
+        //        if (c == 1)
+        //        {
+        //            if(d == 0 && u == 0)
+        //            {
+        //                Console.Write("Cem ");
+        //            }
+        //            else
+        //            {
+        //                Console.Write("Cento ");
+        //            }
+        //        }
+
+        //        //Dezenas
+        //      if(c != 0)
+        //      {
+        //        if(d == 9)
+        //            Console.Write("e Noventa");
+
+        //        if (d == 8)
+        //            Console.Write("e Oitenta ");
+
+        //        if (d == 7)
+        //            Console.Write("e Setenta ");
+
+        //        if (d == 6)
+        //            Console.Write("e Sessenta ");
+
+        //        if (d == 5)
+        //            Console.Write("e Cinquenta ");
+
+        //        if (d == 4)
+        //            Console.Write("e Quarenta ");
+
+        //        if (d == 3)
+        //            Console.Write("e Trinta ");
+
+        //        if (d == 2)
+        //            Console.Write("e Vinte ");
+        //       }
+
+        //        else
+        //        {
+        //            if (d == 9)
+        //                Console.Write(" Noventa");
+
+        //            if (d == 8)
+        //                Console.Write(" Oitenta ");
+
+        //            if (d == 7)
+        //                Console.Write(" Setenta ");
+
+        //            if (d == 6)
+        //                Console.Write(" Sessenta ");
+
+        //            if (d == 5)
+        //                Console.Write(" Cinquenta ");
+
+        //            if (d == 4)
+        //                Console.Write(" Quarenta ");
+
+        //            if (d == 3)
+        //                Console.Write(" Trinta ");
+
+        //            if (d == 2)
+        //                Console.Write(" Vinte ");
+        //        }
+        //        if (d == 1)
+        //        {
+        //            if( u == 0)
+        //            {
+        //                Console.Write("Dez ");
+        //            }
+
+        //            if (u == 1)
+        //            {
+        //                Console.Write("e Onze ");
+        //            }
+
+        //            if (u == 2)
+        //            {
+        //                Console.Write("e Doze ");
+        //            }
+
+
+        //            if (u == 3)
+        //            {
+        //                Console.Write("e Treze ");
+        //            }
+
+        //            if (u == 4)
+        //            {
+        //                Console.Write("e Quatorze ");
+        //            }
+
+        //            if (u == 5)
+        //            {
+        //                Console.Write("e Quinze ");
+        //            }
+
+        //            if (u == 6)
+        //            {
+        //                Console.Write("e Dezesseis ");
+        //            }
+
+        //            if (u == 7)
+        //            {
+        //                Console.Write("e Dezessete ");
+        //            }
+
+        //            if (u == 8)
+        //            {
+        //                Console.Write("e Dezoito ");
+        //            }
+
+        //            if (u == 9)
+        //            {
+        //                Console.Write("e Dezenove ");
+        //            }
+
+        //        }
+
+        //        //Unidade
+
+        //    if(d != 1)
+        //        {
+        //            if (u == 1)
+        //            {
+
+        //                Console.Write("e Um ");
+        //            }
+
+        //            if (u == 2)
+        //            {
+        //                Console.Write("e Dois ");
+        //            }
+
+
+        //            if (u == 3)
+        //            {
+        //                Console.Write("e Três ");
+        //            }
+
+        //            if (u == 4)
+        //            {
+        //                Console.Write("e Quatro ");
+        //            }
+
+        //            if (u == 5)
+        //            {
+        //                Console.Write("e Cinco ");
+        //            }
+
+        //            if (u == 6)
+        //            {
+        //                Console.Write("e Seis ");
+        //            }
+
+        //            if (u == 7)
+        //            {
+        //                Console.Write("e Sete ");
+        //            }
+
+        //            if (u == 8)
+        //            {
+        //                Console.Write("e Oito ");
+        //            }
+
+        //            if (u == 9)
+        //            {
+        //                Console.Write(" e Nove ");
+        //            }
+
+        //        }
+
+
+
+        //    }
+
+        //}
+        //static void Main(string[] args)
+        //{
+        //    EscreveNum numero = new EscreveNum();
+
+        //    Console.Write("Digite quantas centenas tem o número: ");
+        //    numero.centena = int.Parse(Console.ReadLine());
+
+        //    Console.Write("Digite quantas dezenas tem o número: ");
+        //    numero.dezena = int.Parse(Console.ReadLine());
+
+        //    Console.Write("Digite quantas unidades tem o número: ");
+        //    numero.unidade = int.Parse(Console.ReadLine());
+
+        //    numero.NumeroPorExtenso(numero.centena, numero.dezena, numero.unidade);
+        //}
+
+    }
+}
