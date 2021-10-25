@@ -4,204 +4,237 @@ https://www.youtube.com/watch?v=CHzxHQ7fCqI
 
 Ainda esta incompleto!
 
-class Program
-    {
- class EscreveNum
-        {
-            public int centena { get; set; }
-            public int dezena { get; set; }
-            public int unidade { get; set; }
+     /*5. Desenvolva um método que receba um valor inteiro
+e retorne o valor por extenso deste.*/
 
-            public void NumeroPorExtenso(int c, int d, int u)
-            {
-                //Centenas
-                if (c == 9)
-                    Console.Write("Novecentos ");
+        /*
+         *Centena,dezena e unidade
+         Imprimir número entre 1 e 999
+        */
+        //class EscreveNum
+        //{
+        //    public int centena { get; set; }
+        //    public int dezena { get; set; }
+        //    public int unidade { get; set; }
 
-                if (c == 8)
-                    Console.Write("Oitocentos ");
+        //    public void NumeroPorExtenso(int c, int d, int u)
+        //    {
+        //        //Centenas
+        //        if (c == 9)
+        //            Console.Write("Novecentos ");
 
-                if (c == 7)
-                    Console.Write("Setecentos ");
+        //        if (c == 8)
+        //            Console.Write("Oitocentos ");
 
-                if (c == 6)
-                    Console.Write("Seiscentos ");
+        //        if (c == 7)
+        //            Console.Write("Setecentos ");
 
-                if (c == 5)
-                    Console.Write("Quinhentos ");
+        //        if (c == 6)
+        //            Console.Write("Seiscentos ");
 
-                if (c == 4)
-                    Console.Write("Quatrocentos ");
+        //        if (c == 5)
+        //            Console.Write("Quinhentos ");
 
-                if (c == 3)
-                    Console.Write("Trezentos ");
+        //        if (c == 4)
+        //            Console.Write("Quatrocentos ");
 
-                if (c == 2)
-                    Console.Write("Duzentos ");
+        //        if (c == 3)
+        //            Console.Write("Trezentos ");
 
-                if (c == 1)
-                {
-                    if(d == 0 && u == 0)
-                    {
-                        Console.Write("Cem ");
-                    }
-                    else
-                    {
-                        Console.Write("Cento ");
-                    }
-                }
+        //        if (c == 2)
+        //            Console.Write("Duzentos ");
 
-                //Dezenas
-                if(d == 9)
-                    Console.Write("Noventa");
+        //        if (c == 1)
+        //        {
+        //            if(d == 0 && u == 0)
+        //            {
+        //                Console.Write("Cem ");
+        //            }
+        //            else
+        //            {
+        //                Console.Write("Cento ");
+        //            }
+        //        }
 
-                if (d == 8)
-                    Console.Write("Oitenta ");
+        //        //Dezenas
+        //      if(c != 0)
+        //      {
+        //        if(d == 9)
+        //            Console.Write("e Noventa");
 
-                if (d == 7)
-                    Console.Write("Setenta ");
+        //        if (d == 8)
+        //            Console.Write("e Oitenta ");
 
-                if (d == 6)
-                    Console.Write("Sessenta ");
+        //        if (d == 7)
+        //            Console.Write("e Setenta ");
 
-                if (d == 5)
-                    Console.Write("Cinquenta ");
+        //        if (d == 6)
+        //            Console.Write("e Sessenta ");
 
-                if (d == 4)
-                    Console.Write("Quarenta ");
+        //        if (d == 5)
+        //            Console.Write("e Cinquenta ");
 
-                if (d == 3)
-                    Console.Write("Trinta ");
+        //        if (d == 4)
+        //            Console.Write("e Quarenta ");
 
-                if (d == 2)
-                    Console.Write("Vinte ");
+        //        if (d == 3)
+        //            Console.Write("e Trinta ");
 
-                if (d == 1)
-                {
-                    if( u == 0)
-                    {
-                        Console.Write("Dez ");
-                    }
+        //        if (d == 2)
+        //            Console.Write("e Vinte ");
+        //       }
 
-                    if (u == 1)
-                    {
-                        Console.Write("Onze ");
-                    }
+        //        else
+        //        {
+        //            if (d == 9)
+        //                Console.Write(" Noventa");
 
-                    if (u == 2)
-                    {
-                        Console.Write("Doze ");
-                    }
+        //            if (d == 8)
+        //                Console.Write(" Oitenta ");
 
+        //            if (d == 7)
+        //                Console.Write(" Setenta ");
 
-                    if (u == 3)
-                    {
-                        Console.Write("Treze ");
-                    }
+        //            if (d == 6)
+        //                Console.Write(" Sessenta ");
 
-                    if (u == 4)
-                    {
-                        Console.Write("Quatorze ");
-                    }
+        //            if (d == 5)
+        //                Console.Write(" Cinquenta ");
 
-                    if (u == 5)
-                    {
-                        Console.Write("Quinze ");
-                    }
+        //            if (d == 4)
+        //                Console.Write(" Quarenta ");
 
-                    if (u == 6)
-                    {
-                        Console.Write("Dezesseis ");
-                    }
+        //            if (d == 3)
+        //                Console.Write(" Trinta ");
 
-                    if (u == 7)
-                    {
-                        Console.Write("Dezessete ");
-                    }
+        //            if (d == 2)
+        //                Console.Write(" Vinte ");
+        //        }
+        //        if (d == 1)
+        //        {
+        //            if( u == 0)
+        //            {
+        //                Console.Write("Dez ");
+        //            }
 
-                    if (u == 8)
-                    {
-                        Console.Write("Dezoito ");
-                    }
+        //            if (u == 1)
+        //            {
+        //                Console.Write("e Onze ");
+        //            }
 
-                    if (u == 9)
-                    {
-                        Console.Write("Dezenove ");
-                    }
-
-                }
-
-                //Unidade
-               
-            if(d != 1)
-                {
-                    if (u == 1)
-                    {
-                        Console.Write("Um ");
-                    }
-
-                    if (u == 2)
-                    {
-                        Console.Write("Dois ");
-                    }
+        //            if (u == 2)
+        //            {
+        //                Console.Write("e Doze ");
+        //            }
 
 
-                    if (u == 3)
-                    {
-                        Console.Write("Três ");
-                    }
+        //            if (u == 3)
+        //            {
+        //                Console.Write("e Treze ");
+        //            }
 
-                    if (u == 4)
-                    {
-                        Console.Write("Quatro ");
-                    }
+        //            if (u == 4)
+        //            {
+        //                Console.Write("e Quatorze ");
+        //            }
 
-                    if (u == 5)
-                    {
-                        Console.Write("Cinco ");
-                    }
+        //            if (u == 5)
+        //            {
+        //                Console.Write("e Quinze ");
+        //            }
 
-                    if (u == 6)
-                    {
-                        Console.Write("Seis ");
-                    }
+        //            if (u == 6)
+        //            {
+        //                Console.Write("e Dezesseis ");
+        //            }
 
-                    if (u == 7)
-                    {
-                        Console.Write("Sete ");
-                    }
+        //            if (u == 7)
+        //            {
+        //                Console.Write("e Dezessete ");
+        //            }
 
-                    if (u == 8)
-                    {
-                        Console.Write("Oito ");
-                    }
+        //            if (u == 8)
+        //            {
+        //                Console.Write("e Dezoito ");
+        //            }
 
-                    if (u == 9)
-                    {
-                        Console.Write("Nove ");
-                    }
+        //            if (u == 9)
+        //            {
+        //                Console.Write("e Dezenove ");
+        //            }
 
-                }
+        //        }
+
+        //        //Unidade
+
+        //    if(d != 1)
+        //        {
+        //            if (u == 1)
+        //            {
+
+        //                Console.Write("e Um ");
+        //            }
+
+        //            if (u == 2)
+        //            {
+        //                Console.Write("e Dois ");
+        //            }
+
+
+        //            if (u == 3)
+        //            {
+        //                Console.Write("e Três ");
+        //            }
+
+        //            if (u == 4)
+        //            {
+        //                Console.Write("e Quatro ");
+        //            }
+
+        //            if (u == 5)
+        //            {
+        //                Console.Write("e Cinco ");
+        //            }
+
+        //            if (u == 6)
+        //            {
+        //                Console.Write("e Seis ");
+        //            }
+
+        //            if (u == 7)
+        //            {
+        //                Console.Write("e Sete ");
+        //            }
+
+        //            if (u == 8)
+        //            {
+        //                Console.Write("e Oito ");
+        //            }
+
+        //            if (u == 9)
+        //            {
+        //                Console.Write(" e Nove ");
+        //            }
+
+        //        }
 
 
 
-            }
+        //    }
 
-        }
-        static void Main(string[] args)
-        {
-            EscreveNum numero = new EscreveNum();
+        //}
+        //static void Main(string[] args)
+        //{
+        //    EscreveNum numero = new EscreveNum();
 
-            Console.Write("Digite quantas centenas tem o número: ");
-            numero.centena = int.Parse(Console.ReadLine());
+        //    Console.Write("Digite quantas centenas tem o número: ");
+        //    numero.centena = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite quantas dezenas tem o número: ");
-            numero.dezena = int.Parse(Console.ReadLine());
+        //    Console.Write("Digite quantas dezenas tem o número: ");
+        //    numero.dezena = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite quantas unidades tem o número: ");
-            numero.unidade = int.Parse(Console.ReadLine());
+        //    Console.Write("Digite quantas unidades tem o número: ");
+        //    numero.unidade = int.Parse(Console.ReadLine());
 
-            numero.NumeroPorExtenso(numero.centena, numero.dezena, numero.unidade);
-        }
-        
-    }
+        //    numero.NumeroPorExtenso(numero.centena, numero.dezena, numero.unidade);
+        //}
